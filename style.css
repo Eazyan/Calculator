@@ -1,0 +1,68 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff416c, #ff4b2b);
+}
+
+#calculator {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #fd746c, #ff9068);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#display {
+		width: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 2em;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  outline: none;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button-row button {
+  flex: 1;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 5px; /* Добавляем расстояние между кнопками */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  outline: none;
+}
+
+
+button {
+  flex: 1;
+  font-size: 1.2em;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  outline: none;
+}
