@@ -32,8 +32,8 @@ function appendToDisplay(value) {
     appendToDisplay(key);
     } else if (key === 'Enter' || key === '=') {
     calculateResult();
-    } else if (key === 'c' || key === 'C') {
-    clearDisplay();
+    } else if (key === 'c' || key === 'C' || key === 'с' || key === 'С') {
+    clearDisplay()
     } else if (key === 'Backspace') {
     display.value = display.value.slice(0, -1);
     }
