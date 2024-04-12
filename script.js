@@ -28,18 +28,12 @@ function appendToDisplay(value) {
 
     document.addEventListener('keydown', function(event) {
     const key = event.key;
-    if ((key >= '0' && key <= '9') || key === '.') {
+    if ((key >= '0' && key <= '9') || key === '.' || key === '+' || key === '-' || key === '*' || key === '/' || key === '(' || key === ')') {
     appendToDisplay(key);
-    } else if (key === '+' || key === '-' || key === '*' || key === '/') {
-    appendToDisplay(key);
-    } else if (key === '(' || key === ')') {
-    appendToDisplay(key);
-    } else if (key === 'Enter') {
+    } else if (key === 'Enter' || key === '=') {
     calculateResult();
     } else if (key === 'c' || key === 'C') {
     clearDisplay();
-    } else if (key === '=') {
-    calculateResult();
     } else if (key === 'Backspace') {
     display.value = display.value.slice(0, -1);
     }
